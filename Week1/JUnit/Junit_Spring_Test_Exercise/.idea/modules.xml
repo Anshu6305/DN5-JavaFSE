@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercise1_BasicUnitTestForServiceMethod/Exercise1_BasicUnitTestForServiceMethod.iml" filepath="$PROJECT_DIR$/Exercise1_BasicUnitTestForServiceMethod/Exercise1_BasicUnitTestForServiceMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Junit_Spring_Test_Exercise.iml" filepath="$PROJECT_DIR$/.idea/Junit_Spring_Test_Exercise.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+Name: Anshuman Routray
+Email: anshumanroutray6305@gmail.com
+University Roll No: 23052783
+
+Exercise 5: Triggers
+
+Scenario 1:
+The UpdateCustomerLastModified trigger automatically updates the LastModified column whenever a customer's record is updated. This helps maintain an accurate record of the last modification made to customer information.
+
+Scenario 2:
+The LogTransaction trigger automatically inserts a record into the AuditLog table whenever a new transaction is added to the Transactions table. This maintains an audit trail of all banking transactions for security and monitoring purposes.
+
+Scenario 3:
+The CheckTransactionRules trigger enforces business rules before a transaction is inserted. It prevents deposits with non-positive amounts and blocks withdrawals that exceed the available account balance, thereby maintaining data integrity and preventing invalid transactions.
+
+Created By:
+Anshuman Routray
+KIIT University
+Email: anshumanroutray6305@gmail.com
+
+Signature:
+Anshuman Routray
