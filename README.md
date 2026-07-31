@@ -7,53 +7,88 @@ The exercises have been completed based on the official weekly hands-on document
 ## Repository Structure
 
 ```
-Week-1/
-Week-2/
-Week-3/
-Week-4/
-Week-5/
-Week-6/
+Week1/
+├── DesignPatterns/
+├── DSA/
+├── PLSQL/
+├── JUnit/
+├── Mockito/
+└── SLF4J/
+
+Week2/
+├── Spring_Core_Maven/
+└── Spring_Core_JPA_Hibernate/
+
+Week3/
+├── 1. spring-rest-handson.docx/
+├── 2. spring-rest-handson.docx/
+├── 3. spring-rest-handson.docx/
+└── 5. JWT-handson.docx/
+
+Week4/
+├── 1. Microservices using Spring Boot 3 exercises/
+└── 2. Microservices with API gateway/
+
+Week5/
+└── Angular-Fundamentals/
+
+Week6/
+├── Git-HOL1/ ... Git-HOL5/
 ```
 
-Each folder contains the mandatory hands-on exercises for the respective week.
+Each folder contains the mandatory hands-on exercises for the respective week, along with output screenshots and notes where applicable.
 
 ---
 
 ## Week-wise Overview
 
-### Week 1 – Design Patterns and Principles
+### Week 1 – Design Patterns, DSA, PL/SQL, Testing and Logging
 
-This week's exercises focused on understanding the fundamentals of software design. The hands-ons covered SOLID principles and commonly used design patterns such as Singleton, Factory, Builder, Adapter, Observer, and Strategy. The objective was to understand how these principles help in writing clean, maintainable, reusable, and scalable code.
+The foundation week, covering several modules:
 
----
-
-### Week 2 – Data Structures and Algorithms
-
-The exercises introduced core data structures and algorithms used in software development. Topics included arrays, linked lists, searching techniques, sorting algorithms, recursion, and time complexity analysis. These exercises helped improve problem-solving skills and understand how efficient algorithms impact application performance.
-
----
-
-### Week 3 – PL/SQL Programming
-
-This week focused on database programming using PL/SQL. The hands-ons involved writing SQL queries, working with variables, conditional statements, loops, cursors, exception handling, stored procedures, functions, packages, and triggers. These exercises helped strengthen database programming concepts and business logic implementation.
+- **Design Patterns and Principles** – Singleton, Factory Method, Builder, Adapter, Decorator, Proxy, Observer, Strategy, Command, MVC, and Dependency Injection, each implemented as a standalone example project.
+- **Data Structures and Algorithms** – Seven scenario-based problems: E-commerce Search Function, Employee Management System, Financial Forecasting, Inventory Management System, Library Management System, Sorting Customer Orders, and Task Management System. Each includes the answers to the accompanying analysis questions.
+- **PL/SQL Programming** – Seven exercises covering control structures, exception handling, stored procedures, functions, triggers, cursors, and packages, executed and verified in Oracle SQL Developer.
+- **JUnit** – Basic testing (setup, assertions, AAA pattern), advanced testing (parameterized tests, test suites, execution order, exception testing, timeouts), and Spring-specific testing with MockMvc and integration tests.
+- **Mockito** – Mocking and stubbing, verifying interactions, argument matching, void methods, multiple return values, plus advanced mocking of databases, external services, file I/O, and network interactions.
+- **SLF4J** – Log levels, parameterized logging, and configuring console and file appenders with Logback.
 
 ---
 
-### Week 4 – Test Driven Development and Logging
+### Week 2 – Spring Core, Maven, JPA and Hibernate
 
-The exercises covered the basics of Test Driven Development (TDD) and unit testing using JUnit and Mockito. Logging concepts using SLF4J and reducing boilerplate code with Lombok were also introduced. The hands-ons emphasized writing reliable, testable, and maintainable Java applications.
-
----
-
-### Week 5 – Spring Core and Maven
-
-This week's hands-ons introduced the Spring Framework and Maven. Topics included dependency injection, inversion of control (IoC), Spring Bean configuration, Maven project structure, dependency management, and basic Spring Boot concepts. The exercises provided practical experience in building modular Java applications using Spring.
+- **Spring Core and Maven** – Nine exercises covering the Library Management setup, dependency injection, Spring AOP logging, Maven configuration, the Spring IoC container, annotation-based configuration, constructor vs. setter injection, basic AOP, and a Spring Boot version of the Library Management application.
+- **Spring Data JPA and Hibernate** – Multiple hands-on sets covering Hibernate XML and annotation walkthroughs, the differences between JPA, Hibernate and Spring Data JPA, Country CRUD operations, query methods, entity relationships (One-to-Many, Many-to-One, Many-to-Many), HQL/JPQL, native queries, Criteria API, pagination and sorting, entity auditing, projections, and custom data source configuration.
 
 ---
 
-### Week 6 – Spring REST, JPA and Microservices
+### Week 3 – Spring REST and JWT Security
 
-The final week's exercises focused on developing RESTful APIs using Spring Boot. It included working with Spring Data JPA, Hibernate, database integration, CRUD operations, and an introduction to Microservices architecture. The hands-ons also provided exposure to Angular and modern full-stack application development concepts wherever applicable.
+- **Spring Web / Spring REST fundamentals** – Creating a Spring Web project, loading beans from XML, bean scopes (singleton vs. prototype), incorporating logging, and loading single and multiple objects from configuration.
+- **REST web services** – Hello World REST service, Country REST service, Get All Countries, Get Country By Code, exception scenarios, and testing endpoints with MockMVC.
+- **Employee and Department REST services** – Further REST service implementations built around Employee and Department resources.
+- **JWT hands-on** – Securing RESTful web services, creating users and roles, building an authentication controller, reading the authorization header, generating JWT tokens, and implementing a JWT authorization filter.
+
+---
+
+### Week 4 – Microservices with Spring Boot 3
+
+- **Microservices using Spring Boot 3** – A User/Order Management System split across services, an Inventory Management System with a Eureka discovery server and a Spring Cloud Config server, a Customer/Billing setup fronted by an API gateway, and a Payment/Third-party service integration.
+- **Microservices with API Gateway** – Account and Loan microservices built up progressively: standalone services, then service discovery with Eureka, then routing through an API gateway with an additional greet service.
+
+Each hands-on includes screenshots of the running services and their outputs.
+
+---
+
+### Week 5 – Angular Fundamentals
+
+Ten hands-on exercises building a single Angular application incrementally: project setup and components (header, home, course list, student profile), data binding and interpolation, custom directives and pipes, routing with multiple pages, services and models, route guards, HTTP interceptors, state management with a store, and finally connecting the app to a mock backend using JSON Server.
+
+---
+
+### Week 6 – Git and Version Control
+
+Five hands-on labs covering the practical Git workflow: repository initialization and the first commit, `.gitignore` usage with log files, branching and merging, resolving merge conflicts, and repository cleanup. Each lab includes screenshots of the terminal output.
 
 ---
 
@@ -63,14 +98,19 @@ The final week's exercises focused on developing RESTful APIs using Spring Boot.
 - Git & GitHub
 - Maven
 - Spring Framework
-- Spring Boot
+- Spring Boot 3
+- Spring Cloud (Eureka, Config Server, API Gateway)
 - Hibernate
 - Spring Data JPA
-- SQL / PL-SQL
+- SQL / PL-SQL (Oracle)
+- REST APIs
+- Spring Security & JWT
 - JUnit
 - Mockito
-- Lombok
-- REST APIs
+- SLF4J & Logback
+- Angular
+- TypeScript
+- JSON Server
 
 ---
 
